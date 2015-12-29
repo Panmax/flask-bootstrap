@@ -156,12 +156,12 @@ class Bootstrap(object):
             return ConditionalCDN('BOOTSTRAP_SERVE_LOCAL', primary, cdn)
 
         bootstrap = lwrap(
-            WebCDN('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/'
+            WebCDN('//cdn.bootcss.com/bootstrap/%s/'
                    % BOOTSTRAP_VERSION),
             local)
 
         jquery = lwrap(
-            WebCDN('//cdnjs.cloudflare.com/ajax/libs/jquery/%s/'
+            WebCDN('//cdn.bootcss.com/jquery/%s/'
                    % JQUERY_VERSION),
             local)
 
